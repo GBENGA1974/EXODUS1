@@ -2,8 +2,7 @@
 
 resource "aws_vpc" "EXODUS-VPC" {
   cidr_block       = "10.0.0.0/16"
-  instance_tenancy = "default"
-  enable_dns_hostnames = "true" 
+  instance_tenancy = "default" 
 
   tags = {
     Name = "EXODUS-VPC"
